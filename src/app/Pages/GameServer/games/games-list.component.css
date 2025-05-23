@@ -1,0 +1,18 @@
+.price {
+    background-color: rgba(138, 43, 226, 0.8);
+    margin-left: auto;
+    display: inline-block;
+    margin-right: auto
+}
+
+.img-12x12 {
+    margin-top: 35px;
+    bottom: 50px;
+}
+
+
+.img-3x2 {
+    width: 300px;
+    aspect-ratio: 3 / 2;
+    margin-top: 75px;
+}
