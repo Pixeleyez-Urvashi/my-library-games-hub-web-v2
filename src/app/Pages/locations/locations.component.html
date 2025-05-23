@@ -1,0 +1,71 @@
+<section class="jarallax">
+    <div class="de-gradient-edge-top"></div>
+    <div class="de-gradient-edge-bottom"></div>
+    <img src="assets/images/background/bg-grid.webp" class="jarallax-img" alt="">
+    <div class="container z-1000">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="subtitle fadeInUp mb-3" data-aos="fade-up">Server locations</div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="fadeInUp mb20" data-aos="fade-up" data-aos-delay="200"><span class="text-gradient">25</span> servers available worldwide for your game.</h2>
+            </div>
+            <div class="col-lg-6">
+                Take advantage of our server location testing tool to ensure optimal performance. Since your users are spread across various locations, it's important to identify the server location that provides the best experience for your members. Our ping tester can help you determine the ideal server location for your specific needs.
+            </div>
+
+            <div class="spacer-10"></div>
+
+            <div class="col-lg-12 fadeInUp" data-aos="fade-up">
+                <div class="mb-sm-0">
+                    <div class="de-map-hotspot">
+                        <div *ngFor="let hotspot of hotspots" class="de-spot fadeIn" data-aos="fade-up" [style.top]="hotspot.top" [style.left]="hotspot.left">
+                            <span>{{ hotspot.name }}</span>
+                            <div class="de-circle-1"></div>
+                            <div class="de-circle-2"></div>
+                        </div>
+                        <img src="assets/images/misc/world-map.webp" class="img-fluid" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="no-bottom fadeInRight d-flex z-1000" data-aos="fade-up">
+        <marquee class="marq" direction="left" loop="" scrollamount="30">
+            <div class="de-marquee-list" data-aos="fade-up">
+                <ng-container *ngFor="let city of cities">
+                    <span class="d-item-txt">{{ city }}</span>
+                    <span class="d-item-display">
+                        <i class="d-item-block"></i>
+                    </span>
+                </ng-container>
+            </div>
+
+        </marquee>
+    </div>
+</section>
+
+<section class="pt0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="padding60 sm-padding40 jarallax position-relative">
+                    <img src="assets/images/background/1.webp" class="jarallax-img" alt="">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="subtitle fadeInUp mb-3" data-aos="fade-up">Start your game</div>
+                            <h2 class="fadeInUp" data-aos="fade-up" data-aos-delay="200">Unlock Your Gaming Full Potential</h2>
+                            <p class="fadeInUp" data-aos="fade-up">Aute esse non magna elit dolore dolore dolor sit est. Ea occaecat ea duis laborum reprehenderit id cillum tempor cupidatat qui nisi proident nostrud dolore id do eiusmod. Lorem ipsum non labore.</p>
+                            <div class="spacer-10"></div>
+                            <a appBtnMainHover class="btn-main mb10 fadeInUp" data-aos="fade-up" routerLink="/game-server-1"><span>Order Your Game Server Now</span></a>
+                        </div>
+                    </div>
+
+                    <img src="assets/images/misc/avatar.webp" class="sm-hide position-absolute bottom-0 end-0 fadeIn" data-aos="fade-in" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,318 @@
+<section id="swiper-s2" class="no-top no-bottom position-relative z-1000">
+    <!-- Slider main wrapper -->
+    <div class="swiper-container-wrapper">
+        <!-- Slider main container -->
+        <div class="swiper-container gallery-top" #grabCursor>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div *ngFor="let slide of slides" class="swiper-slide" [style.background-image]="slide.bgImage">
+                    <div class="sw-caption s2">
+                        <div class="container">
+                            <div class="row gx-5 align-items-center">
+                                <div class="col-lg-8 offset-lg-2 mb-sm-30">
+                                    <div class="subtitle blink mb-4">Servers Are Available</div>
+                                    <h1 class="slider-title text-uppercase mb-1">{{ slide.title }}</h1>
+                                </div>
+                                <div class="col-lg-6 offset-lg-3">
+                                    <p class="slider-text">{{ slide.description }}</p>
+                                    <div class="spacer-10"></div>
+                                    <a appBtnMainHover class="btn-main mb10" [href]="slide.orderLink"><span>Order Your Game Server Now</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sw-overlay"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider thumbnail container -->
+        <div class="swiper-container gallery-thumbs">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" [style.background-image]="bgImageUrl">
+                    <div class="sw-caption-thumb">
+                        <span class="d-tag">
+                            15% OFF
+                        </span>
+                        <h3>Cyber Nexus</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide" [style.background-image]="bgImageUrl2">
+                    <div class="sw-caption-thumb">
+                        <span class="d-tag">
+                            12% OFF
+                        </span>
+                        <h3>Ancient Realms</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide" [style.background-image]="bgImageUrl3">
+                    <div class="sw-caption-thumb">
+                        <span class="d-tag">
+                            20% OFF
+                        </span>
+                        <h3>Thunder and City</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide" [style.background-image]="bgImageUrl4">
+                    <div class="sw-caption-thumb">
+                        <span class="d-tag">
+                            15% OFF
+                        </span>
+                        <h3>Raceway Revolution</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pt90 no-bottom">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-4 col-md-6 mb-sm-30">
+                <h3>Server Near You</h3>
+                <p>Duis aliqua ex nostrud eiusmod esse esse reprehenderit non esse elit dolore sed qui cupidatat magna occaecat officia ut exercitation eu sed est elit id commodo.</p>
+                <a appBtnMainHover class="btn-main btn-line lg-w-50" routerLink="/locations"><span>Choose a Server</span></a>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-sm-30">
+                <h3>Affiliates Program</h3>
+                <p>Duis aliqua ex nostrud eiusmod esse esse reprehenderit non esse elit dolore sed qui cupidatat magna occaecat officia ut exercitation eu sed est elit id commodo.</p>
+                <a appBtnMainHover class="btn-main btn-line lg-w-50" routerLink="/affliate"><span>Become an Affiliate</span></a>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-sm-30">
+                <h3>Need Support?</h3>
+                <p>Duis aliqua ex nostrud eiusmod esse esse reprehenderit non esse elit dolore sed qui cupidatat magna occaecat officia ut exercitation eu sed est elit id commodo.</p>
+                <a appBtnMainHover class="btn-main btn-line lg-w-50" routerLink="/knowledgebase"><span>Contact Support</span></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-game-collection></app-game-collection>
+
+
+<section class="no-top no-bottom jarallax">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="subtitle fadeInUp mb-3" data-aos="fade-up">Server locations</div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="fadeInUp mb20" data-aos="fade-up" data-aos-delay="200">25 servers available worldwide for your game.</h2>
+            </div>
+            <div class="col-lg-6">
+                Take advantage of our server location testing tool to ensure optimal performance. Since your users are spread across various locations, it's important to identify the server location that provides the best experience for your members. Our ping tester can help you determine the ideal server location for your specific needs.
+            </div>
+
+            <div class="spacer-10"></div>
+
+            <div class="col-lg-12 fadeInUp" data-aos="fade-up">
+                <div class="p-sm-30 pb-sm-0 mb-sm-0">
+                    <div class="de-map-hotspot">
+                        <div class="de-spot fadeIn" data-aos="fade-in" style="top:39%; left:20%">
+                            <span>United&nbsp;States</span>
+                            <div class="de-circle-1"></div>
+                            <div class="de-circle-2"></div>
+                        </div>
+                        <div class="de-spot fadeIn" data-aos="fade-in" style="top:76%; left:87%">
+                            <span>Australia</span>
+                            <div class="de-circle-1"></div>
+                            <div class="de-circle-2"></div>
+                        </div>
+                        <div class="de-spot fadeIn" data-aos="fade-in" style="top:68%; left:80%">
+                            <span>Indonesia</span>
+                            <div class="de-circle-1"></div>
+                            <div class="de-circle-2"></div>
+                        </div>
+                        <div class="de-spot fadeIn" data-aos="fade-in" style="top:23%; left:18%">
+                            <span>Canada</span>
+                            <div class="de-circle-1"></div>
+                            <div class="de-circle-2"></div>
+                        </div>
+                        <div class="de-spot fadeIn" data-aos="fade-in" style="top:68%; left:33%">
+                            <span>Brazil</span>
+                            <div class="de-circle-1"></div>
+                            <div class="de-circle-2"></div>
+                        </div>
+                        <div class="de-spot fadeIn" data-aos="fade-in" style="top:45%; left:75%">
+                            <span>China</span>
+                            <div class="de-circle-1"></div>
+                            <div class="de-circle-2"></div>
+                        </div>
+                        <div class="de-spot fadeIn" data-aos="fade-in" style="top:36%; left:48%">
+                            <span>France</span>
+                            <div class="de-circle-1"></div>
+                            <div class="de-circle-2"></div>
+                        </div>
+                        <div class="de-spot fadeIn" data-aos="fade-in" style="top:23%; left:51%">
+                            <span>Sweden</span>
+                            <div class="de-circle-1"></div>
+                            <div class="de-circle-2"></div>
+                        </div>
+                        <div class="de-spot fadeIn" data-aos="fade-in" style="top:78%; left:53%">
+                            <span>South&nbsp;Africa</span>
+                            <div class="de-circle-1"></div>
+                            <div class="de-circle-2"></div>
+                        </div>
+                        <img src="assets/images/misc/world-map.webp" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="no-bottom fadeInRight d-flex z-1000" data-aos="fade-up">
+        <div class="de-marquee-list" data-aos="fade-up">
+            <div class="d-item">
+                <span class="d-item-txt">London</span>
+                <span class="d-item-display">
+                    <i class="d-item-block"></i>
+                </span>
+                <span class="d-item-txt">Paris</span>
+                <span class="d-item-display">
+                    <i class="d-item-block"></i>
+                </span>
+                <span class="d-item-txt">Frankurt</span>
+                <span class="d-item-display">
+                    <i class="d-item-block"></i>
+                </span>
+                <span class="d-item-txt">Amsterdam</span>
+                <span class="d-item-display">
+                    <i class="d-item-block"></i>
+                </span>
+                <span class="d-item-txt">Stockholm</span>
+                <span class="d-item-display">
+                    <i class="d-item-block"></i>
+                </span>
+                <span class="d-item-txt">Helsinki</span>
+                <span class="d-item-display">
+                    <i class="d-item-block"></i>
+                </span>
+                <span class="d-item-txt">Los Angeles</span>
+                <span class="d-item-display">
+                    <i class="d-item-block"></i>
+                </span>
+                <span class="d-item-txt">Quebec</span>
+                <span class="d-item-display">
+                    <i class="d-item-block"></i>
+                </span>
+                <span class="d-item-txt">Singapore</span>
+                <span class="d-item-display">
+                    <i class="d-item-block"></i>
+                </span>
+                <span class="d-item-txt">Sydney</span>
+                <span class="d-item-display">
+                    <i class="d-item-block"></i>
+                </span>
+                <span class="d-item-txt">Sau Paulo</span>
+                <span class="d-item-display">
+                    <i class="d-item-block"></i>
+                </span>
+                <span class="d-item-txt">Bangkok</span>
+                <span class="d-item-display">
+                    <i class="d-item-block"></i>
+                </span>
+                <span class="d-item-txt">Jakarta</span>
+                <span class="d-item-display">
+                    <i class="d-item-block"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="no-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="padding60 sm-padding40 sm-p-2 jarallax position-relative" data-jarallax data-speed="0.5">
+                    <img src="assets/images/background/1.webp" class="jarallax-img" alt="">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="subtitle fadeInUp mb-3">Start your game</div>
+                            <h2 class="fadeInUp">Unlock Your Gaming Full Potential</h2>
+                            <p class="fadeInUp">Aute esse non magna elit dolore dolore dolor sit est. Ea occaecat ea duis laborum reprehenderit id cillum tempor cupidatat qui nisi proident nostrud dolore id do eiusmod. Lorem ipsum non labore.</p>
+                            <div class="spacer-10"></div>
+                            <a appBtnMainHover class="btn-main mb10 fadeInUp" routerLink="/game-server-1"><span>Order Your Game Server Now</span></a>
+                        </div>
+                    </div>
+
+                    <img src="assets/images/misc/avatar.webp" class="sm-hide position-absolute bottom-0 end-0 fadeIn" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="no-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="subtitle fadeInUp mb-3">Incredibly features</div>
+                <h2 class="fadeInUp mb20" data-aos="fade-up" data-aos-delay="0">Premium Game Server</h2>
+            </div>
+
+            <div class="col-lg-6"></div>
+
+            <div class="col-lg-3 col-md-6 mb-sm-20 fadeInRight" data-aos="fade-up" data-aos-delay="0">
+                <div>
+                    <img src="assets/images/icons/1.png" class="mb20" alt="">
+                    <h4>Super Quick Setup</h4>
+                    <p>Dolor minim in pariatur in deserunt laboris eu pariatur labore excepteur cupidatat cupidatat duis dolor in.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-sm-20 fadeInRight" data-aos="fade-up" data-aos-delay="200">
+                <div>
+                    <img src="assets/images/icons/2.png" class="mb20" alt="">
+                    <h4>Premium Hardware</h4>
+                    <p>Dolor minim in pariatur in deserunt laboris eu pariatur labore excepteur cupidatat cupidatat duis dolor in.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-sm-20 fadeInRight" data-aos="fade-up" data-aos-delay="400">
+                <div>
+                    <img src="assets/images/icons/3.png" class="mb20" alt="">
+                    <h4>DDos Protection</h4>
+                    <p>Dolor minim in pariatur in deserunt laboris eu pariatur labore excepteur cupidatat cupidatat duis dolor in.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-sm-20 fadeInRight" data-aos="fade-up" data-aos-delay="600">
+                <div>
+                    <img src="assets/images/icons/4.png" class="mb20" alt="">
+                    <h4>Fast Support</h4>
+                    <p>Dolor minim in pariatur in deserunt laboris eu pariatur labore excepteur cupidatat cupidatat duis dolor in.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-download-section></app-download-section>
+<section class="no-bottom">
+    <app-questions></app-questions>
+</section>
+<section>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="subtitle fadeInUp mb-3" data-aos="fade-up">Payment Methods</div>
+                <h2 class="fadeInUp" data-aos="fade-up" data-aos-delay="200">We accept</h2>
+            </div>
+            <div class="col-lg-6">
+                <div class="row g-4">
+                    <div class="col-sm-2 col-4" *ngFor="let paymentMethod of paymentMethods">
+                        <div class="p-2 rounded-10" data-bgcolor="rgba(255, 255, 255, .05)">
+                            <img [src]="paymentMethod.img" class="img-fluid" alt="{{ paymentMethod.name }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
