@@ -1,0 +1,36 @@
+<section class="no-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="subtitle mb20">Customer reviews</div>
+                <h2 class="fadeInUp" data-aos="fade-up" data-aos-delay="0">4.85 out of 5</h2>
+                <div class="spacer-20"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="swiper-container" #testimonialCarousel>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" *ngFor="let testimonial of testimonials">
+                        <div class="de_testi type-2">
+                            <blockquote>
+                                <div class="de-rating-ext">
+                                    <span class="d-stars">
+                                        <i class="fa fa-star" *ngFor="let star of stars"></i>
+                                    </span>
+                                </div>
+                                <p>{{ testimonial.text }}</p>
+                                <div class="de_testi_by">
+                                    <img [src]="testimonial.image" alt="{{ testimonial.author }}"> <span>{{ testimonial.author }}</span>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
