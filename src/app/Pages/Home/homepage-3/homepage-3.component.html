@@ -1,0 +1,558 @@
+<section class="pt60 no-bottom" [style.background-image]="bgImageUrl">
+    <div class="container">
+        <div class="row align-items-center gx-5">
+
+            <div class="col-lg-6">
+                <div class="subtitle fadeInUp mb-3" data-aos="fade-up">Level Up Your Game</div>
+                <h2 class="fadeInUp" data-aos="fade-up" data-aos-delay="200">Your victory begins with ultra performance</h2>
+                <p class="fadeInUp" data-aos="fade-up">Welcome to the ultimate gaming experience! Our game hosting service is designed to take your gaming adventures to the next level. With lightning-fast servers, unbeatable reliability, and 24/7 support, we're here to ensure your gaming experience is seamless and stress-free. Join us and let's embark on an epic gaming journey together. Your victory begins here!</p>
+                <div class="spacer-10"></div>
+                <a appBtnMainHover class="btn-main mb10 fadeInUp" data-aos="fade-up" routerLink="/game-server-1"><span>Order Your Game Server Now</span></a>
+
+            </div>
+
+            <div class="col-lg-6">
+                <div class="d_wrap">
+                    <img src="assets/images/misc/server-2.webp" class="lazy img-fluid fadeIn" data-aos="fade-in" data-aos-delay="0" alt="">
+                    <div class="d_wrap_sm-box d-lg-block d-none b1 zoomIn" data-aos="zoomIn" data-aos-delay="200">
+                        <i class="bg-gradient fa fa-users"></i>
+                        <h3>15425</h3>
+                        <h6>Happy Gamers</h6>
+                    </div>
+
+                    <div class="d_wrap_sm-box d-lg-block d-none b2 zoomIn" data-aos="zoomIn" data-aos-delay="400">
+                        <i class="bg-gradient fa fa-rotate"></i>
+                        <h3>99.99%</h3>
+                        <h6>Uptime</h6>
+                    </div>
+
+                    <div class="d_wrap_sm-box d-lg-block d-none b3 zoomIn" data-aos="zoomIn" data-aos-delay="600">
+                        <i class="bg-gradient fa fa-thumbs-up"></i>
+                        <h3>15 Years</h3>
+                        <h6>Experiences</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="no-bottom">
+    <div class="no-bottom fadeInRight d-flex z-1000" data-aos="fadeInRight">
+        <marquee class="marq" direction="left" loop="" scrollamount="30">
+            <div class="de-marquee-list s2" data-aos="fade-up">
+                <div class="">
+                    <ng-container *ngFor="let city of cities">
+                        <span class="d-item-txt">
+                            <img [src]="city.flag" alt="">{{ city.name }}
+                        </span>
+                        <span class="d-item-display">
+                            <i class="d-item-block"></i>
+                        </span>
+                    </ng-container>
+                </div>
+            </div>
+        </marquee>
+    </div>
+</section>
+
+<section class="jarallax position-relative">
+    <img src="assets/images/background/5.webp" class="jarallax-img" alt="">
+    <div class="de-gradient-edge-top"></div>
+    <div class="de-gradient-edge-bottom"></div>
+    <div class="container z-1000">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 text-center">
+                <div class="subtitle fadeInUp mb-3" data-aos="fade-up">Pricing Plans</div>
+                <h2 class="fadeInUp mb20" data-aos="fade-up" data-aos-delay="200">Choose plan for you</h2>
+                <div class="switch-set">
+                    <div>Monthly Plan</div>
+                    <div><input id="sw-1" class="switch" type="checkbox"></div>
+                    <div>Yearly Plan</div>
+                    <div class="spacer-20"></div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-xl-3 col-md-6 mb-sm-30" data-aos="fadeInRight" data-aos-delay="200">
+                <div class="de_pricing-table type-2">
+                    <div class="d-head">
+                        <h3>4 Slots</h3>
+                    </div>
+                    <div class="d-price">
+                        <h4 class="opt-1">$3.59<span>/mo</span></h4>
+                        <h4 class="opt-2">$2.59<span>/mo</span></h4>
+                        <p>Normally <s>$9.99</s></p>
+                    </div>
+                    <div class="d-location">
+                        <h4>Server Location</h4>
+                        <select name='Server Location' class="server_location" class="form-control">
+                            <option value='option-1' data-src="assets/images/flags/united-kingdom.png">
+                                London, England
+                            </option>
+                            <option value='option-2' data-src="assets/images/flags/france.png">
+                                Paris, France
+                            </option>
+                            <option value='option-3' data-src="assets/images/flags/germany.png">
+                                Frankurt, Germany
+                            </option>
+                            <option value='option-4' data-src="assets/images/flags/netherlands.png">
+                                Amsterdam, Netherlands
+                            </option>
+                            <option value='option-5' data-src="assets/images/flags/sweden.png">
+                                Stockholm, Sweden
+                            </option>
+                            <option value='option-6' data-src="assets/images/flags/finland.png">
+                                Helsinki, Finland
+                            </option>
+                            <option value='option-7' data-src="assets/images/flags/usa.png">
+                                Los Angeles, USA
+                            </option>
+                            <option value='option-8' data-src="assets/images/flags/canada.png">
+                                Quebec, Canada
+                            </option>
+                            <option value='option-9' data-src="assets/images/flags/australia.png">
+                                Sydney, Australia
+                            </option>
+                            <option value='option-10' data-src="assets/images/flags/brazil.png">
+                                Sau Paulo, Brazil
+                            </option>
+                            <option value='option-11' data-src="assets/images/flags/thailand.png">
+                                Bangkok, Thailand
+                            </option>
+                            <option value='option-12' data-src="assets/images/flags/indonesia.png">
+                                Jakarta, Indonesia
+                            </option>
+                        </select>
+                    </div>
+                    <div class="spacer-5"></div>
+                    <div class="d-group">
+                        <h4>Top Features</h4>
+                        <ul class="d-list">
+                            <li>Super Quick Setup</li>
+                            <li>Premium Hardware</li>
+                            <li>DDos Protection</li>
+                            <li>24/7 Customer Support</li>
+                        </ul>
+                    </div>
+                    <div class="d-action">
+                        <a href="javascript:void(0);" appBtnMainHover class="btn-main opt-1 w-100"><span>Get Monthly Plan</span></a>
+                        <a href="javascript:void(0);" appBtnMainHover class="btn-main opt-2 w-100"><span>Get Yearly Plan</span></a>
+                        <p>Auto re-news at regular rate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-sm-30 fadeInRight" data-aos="fadeInRight" data-aos-delay="400">
+                <div class="de_pricing-table type-2">
+                    <div class="d-head">
+                        <h3>10 Slots</h3>
+                    </div>
+                    <div class="d-price">
+                        <h4 class="opt-1">$5.59<span>/mo</span></h4>
+                        <h4 class="opt-2">$3.59<span>/mo</span></h4>
+                        <p>Normally <s>$15.99</s></p>
+                    </div>
+                    <div class="d-location">
+                        <h4>Server Location</h4>
+                        <select name='Server Location' class="server_location" class="form-control">
+                            <option value='option-1' data-src="assets/images/flags/united-kingdom.png">
+                                London, England
+                            </option>
+                            <option value='option-2' data-src="assets/images/flags/france.png">
+                                Paris, France
+                            </option>
+                            <option value='option-3' data-src="assets/images/flags/germany.png">
+                                Frankurt, Germany
+                            </option>
+                            <option value='option-4' data-src="assets/images/flags/netherlands.png">
+                                Amsterdam, Netherlands
+                            </option>
+                            <option value='option-5' data-src="assets/images/flags/sweden.png">
+                                Stockholm, Sweden
+                            </option>
+                            <option value='option-6' data-src="assets/images/flags/finland.png">
+                                Helsinki, Finland
+                            </option>
+                            <option value='option-7' data-src="assets/images/flags/usa.png">
+                                Los Angeles, USA
+                            </option>
+                            <option value='option-8' data-src="assets/images/flags/canada.png">
+                                Quebec, Canada
+                            </option>
+                            <option value='option-9' data-src="assets/images/flags/australia.png">
+                                Sydney, Australia
+                            </option>
+                            <option value='option-10' data-src="assets/images/flags/brazil.png">
+                                Sau Paulo, Brazil
+                            </option>
+                            <option value='option-11' data-src="assets/images/flags/thailand.png">
+                                Bangkok, Thailand
+                            </option>
+                            <option value='option-12' data-src="assets/images/flags/indonesia.png">
+                                Jakarta, Indonesia
+                            </option>
+                        </select>
+                    </div>
+                    <div class="d-group">
+                        <h4>Top Features</h4>
+                        <ul class="d-list">
+                            <li>Super Quick Setup</li>
+                            <li>Premium Hardware</li>
+                            <li>DDos Protection</li>
+                            <li>24/7 Customer Support</li>
+                        </ul>
+                    </div>
+                    <div class="d-action">
+                        <a href="javascript:void(0);" appBtnMainHover class="btn-main opt-1 w-100"><span>Get Monthly Plan</span></a>
+                        <a href="javascript:void(0);" appBtnMainHover class="btn-main opt-2 w-100"><span>Get Yearly Plan</span></a>
+                        <p>Auto re-news at regular rate</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-sm-30 fadeInRight" data-aos="fadeInRight" data-aos-delay="600">
+                <div class="de_pricing-table type-2 rec">
+                    <div class="d-recommend">Best Seller</div>
+                    <div class="d-head">
+                        <h3>20 Slots</h3>
+                    </div>
+                    <div class="d-price">
+                        <h4 class="opt-1">$8.59<span>/mo</span></h4>
+                        <h4 class="opt-2">$5.59<span>/mo</span></h4>
+                        <p>Normally <s>$24.99</s></p>
+                    </div>
+                    <div class="d-location">
+                        <h4>Server Location</h4>
+                        <select name='Server Location' class="server_location" class="form-control">
+                            <option value='option-1' data-src="assets/images/flags/united-kingdom.png">
+                                London, England
+                            </option>
+                            <option value='option-2' data-src="assets/images/flags/france.png">
+                                Paris, France
+                            </option>
+                            <option value='option-3' data-src="assets/images/flags/germany.png">
+                                Frankurt, Germany
+                            </option>
+                            <option value='option-4' data-src="assets/images/flags/netherlands.png">
+                                Amsterdam, Netherlands
+                            </option>
+                            <option value='option-5' data-src="assets/images/flags/sweden.png">
+                                Stockholm, Sweden
+                            </option>
+                            <option value='option-6' data-src="assets/images/flags/finland.png">
+                                Helsinki, Finland
+                            </option>
+                            <option value='option-7' data-src="assets/images/flags/usa.png">
+                                Los Angeles, USA
+                            </option>
+                            <option value='option-8' data-src="assets/images/flags/canada.png">
+                                Quebec, Canada
+                            </option>
+                            <option value='option-9' data-src="assets/images/flags/australia.png">
+                                Sydney, Australia
+                            </option>
+                            <option value='option-10' data-src="assets/images/flags/brazil.png">
+                                Sau Paulo, Brazil
+                            </option>
+                            <option value='option-11' data-src="assets/images/flags/thailand.png">
+                                Bangkok, Thailand
+                            </option>
+                            <option value='option-12' data-src="assets/images/flags/indonesia.png">
+                                Jakarta, Indonesia
+                            </option>
+                        </select>
+                    </div>
+                    <div class="d-group">
+                        <h4>Top Features</h4>
+                        <ul class="d-list">
+                            <li>Super Quick Setup</li>
+                            <li>Premium Hardware</li>
+                            <li>DDos Protection</li>
+                            <li>24/7 Customer Support</li>
+                        </ul>
+                    </div>
+                    <div class="d-action">
+                        <a href="javascript:void(0);" appBtnMainHover class="btn-main opt-1 w-100"><span>Get Monthly Plan</span></a>
+                        <a href="javascript:void(0);" appBtnMainHover class="btn-main opt-2 w-100"><span>Get Yearly Plan</span></a>
+                        <p>Auto re-news at regular rate</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-sm-30 fadeInRight" data-aos="fadeInRight" data-aos-delay="800">
+                <div class="de_pricing-table type-2">
+                    <div class="d-head">
+                        <h3>Custom</h3>
+                    </div>
+                    <div class="d-price">
+                        <h4 class="opt-1">$15.59<span>/mo</span></h4>
+                        <h4 class="opt-2">$10.59<span>/mo</span></h4>
+                        <p>Normally <s>$36.99</s></p>
+                    </div>
+                    <div class="d-location">
+                        <h4>Server Location</h4>
+                        <select name='Server Location' class="server_location" class="form-control">
+                            <option value='option-1' data-src="assets/images/flags/united-kingdom.png">
+                                London, England
+                            </option>
+                            <option value='option-2' data-src="assets/images/flags/france.png">
+                                Paris, France
+                            </option>
+                            <option value='option-3' data-src="assets/images/flags/germany.png">
+                                Frankurt, Germany
+                            </option>
+                            <option value='option-4' data-src="assets/images/flags/netherlands.png">
+                                Amsterdam, Netherlands
+                            </option>
+                            <option value='option-5' data-src="assets/images/flags/sweden.png">
+                                Stockholm, Sweden
+                            </option>
+                            <option value='option-6' data-src="assets/images/flags/finland.png">
+                                Helsinki, Finland
+                            </option>
+                            <option value='option-7' data-src="assets/images/flags/usa.png">
+                                Los Angeles, USA
+                            </option>
+                            <option value='option-8' data-src="assets/images/flags/canada.png">
+                                Quebec, Canada
+                            </option>
+                            <option value='option-9' data-src="assets/images/flags/australia.png">
+                                Sydney, Australia
+                            </option>
+                            <option value='option-10' data-src="assets/images/flags/brazil.png">
+                                Sau Paulo, Brazil
+                            </option>
+                            <option value='option-11' data-src="assets/images/flags/thailand.png">
+                                Bangkok, Thailand
+                            </option>
+                            <option value='option-12' data-src="assets/images/flags/indonesia.png">
+                                Jakarta, Indonesia
+                            </option>
+                        </select>
+                    </div>
+                    <div class="d-group">
+                        <h4>Top Features</h4>
+                        <ul class="d-list">
+                            <li>Super Quick Setup</li>
+                            <li>Premium Hardware</li>
+                            <li>DDos Protection</li>
+                            <li>24/7 Customer Support</li>
+                        </ul>
+                    </div>
+                    <div class="d-action">
+                        <a href="javascript:void(0);" appBtnMainHover class="btn-main opt-1 w-100"><span>Get Monthly Plan</span></a>
+                        <a href="javascript:void(0);" appBtnMainHover class="btn-main opt-2 w-100"><span>Get Yearly Plan</span></a>
+                        <p>Auto re-news at regular rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="no-top">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="subtitle fadeInUp mb-3" data-aos="fade-up">Most complete</div>
+                <h2 class="fadeInUp mb20" data-aos="fade-up" data-aos-delay="200">Game Collection</h2>
+            </div>
+            <div class="col-lg-6 text-lg-end">
+                <a appBtnMainHover class="btn-main mb-sm-30" routerLink="/game-server-1"><span>View all games</span></a>
+            </div>
+        </div>
+        <div class="row g-4 sequence">
+            <div class="col-lg-4 col-sm-6 gallery-item">
+                <div class="de-item" data-aos="fade-up">
+                    <div class="d-overlay">
+                        <div class="d-label">
+                            20% OFF
+                        </div>
+                        <div class="d-text">
+                            <h4>Thunder and City</h4>
+                            <p class="d-price">Starting at <span class="price">$14.99</span></p>
+                            <a appBtnMainHover class="btn-main btn-fullwidth" routerLink="/pricing-table-one"><span>Order Now</span></a>
+                        </div>
+                    </div>
+                    <img src="assets/images/covers/1.webp" class="img-fluid " alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 gallery-item">
+                <div class="de-item" data-aos="fade-up">
+                    <div class="d-overlay">
+                        <div class="d-label">
+                            20% OFF
+                        </div>
+                        <div class="d-text">
+                            <h4>Mystic Racing Z</h4>
+                            <p class="d-price">Starting at <span class="price">$14.99</span></p>
+                            <a appBtnMainHover class="btn-main btn-fullwidth" routerLink="/pricing-table-one"><span>Order Now</span></a>
+                        </div>
+                    </div>
+                    <img src="assets/images/covers/2.webp" class="img-fluid " alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 gallery-item">
+                <div class="de-item" data-aos="fade-up">
+                    <div class="d-overlay">
+                        <div class="d-label">
+                            20% OFF
+                        </div>
+                        <div class="d-text">
+                            <h4>Silent Wrath</h4>
+                            <p class="d-price">Starting at <span class="price">$14.99</span></p>
+                            <a appBtnMainHover class="btn-main btn-fullwidth" routerLink="/pricing-table-one"><span>Order Now</span></a>
+                        </div>
+                    </div>
+                    <img src="assets/images/covers/3.webp" class="img-fluid " alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 gallery-item">
+                <div class="de-item" data-aos="fade-up">
+                    <div class="d-overlay">
+                        <div class="d-label">
+                            20% OFF
+                        </div>
+                        <div class="d-text">
+                            <h4>Funk Dungeon</h4>
+                            <p class="d-price">Starting at <span class="price">$14.99</span></p>
+                            <a appBtnMainHover class="btn-main btn-fullwidth" routerLink="/pricing-table-one"><span>Order Now</span></a>
+                        </div>
+                    </div>
+                    <img src="assets/images/covers/4.webp" class="img-fluid " alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 gallery-item">
+                <div class="de-item" data-aos="fade-up">
+                    <div class="d-overlay">
+                        <div class="d-label">
+                            20% OFF
+                        </div>
+                        <div class="d-text">
+                            <h4>Galactic Odyssey</h4>
+                            <p class="d-price">Starting at <span class="price">$14.99</span></p>
+                            <a appBtnMainHover class="btn-main btn-fullwidth" routerLink="/pricing-table-one"><span>Order Now</span></a>
+                        </div>
+                    </div>
+                    <img src="assets/images/covers/5.webp" class="img-fluid " alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 gallery-item">
+                <div class="de-item">
+                    <div class="d-overlay">
+                        <div class="d-label">
+                            20% OFF
+                        </div>
+                        <div class="d-text">
+                            <h4>Warfare Legends</h4>
+                            <p class="d-price">Starting at <span class="price">$14.99</span></p>
+                            <a appBtnMainHover class="btn-main btn-fullwidth" routerLink="/pricing-table-one"><span>Order Now</span></a>
+                        </div>
+                    </div>
+                    <img src="assets/images/covers/6.webp" class="img-fluid " alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="no-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="subtitle fadeInUp mb-3">Incredibly features</div>
+                <h2 class="fadeInUp mb20" data-aos="fade-up" data-aos-delay="0">Premium Game Server</h2>
+            </div>
+
+            <div class="col-lg-6"></div>
+
+            <div class="col-lg-3 col-md-6 mb-sm-20 fadeInRight" data-aos="fade-up" data-aos-delay="0">
+                <div>
+                    <img src="assets/images/icons/1.png" class="mb20" alt="">
+                    <h4>Super Quick Setup</h4>
+                    <p>Dolor minim in pariatur in deserunt laboris eu pariatur labore excepteur cupidatat cupidatat duis dolor in.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-sm-20 fadeInRight" data-aos="fade-up" data-aos-delay="200">
+                <div>
+                    <img src="assets/images/icons/2.png" class="mb20" alt="">
+                    <h4>Premium Hardware</h4>
+                    <p>Dolor minim in pariatur in deserunt laboris eu pariatur labore excepteur cupidatat cupidatat duis dolor in.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-sm-20 fadeInRight" data-aos="fade-up" data-aos-delay="400">
+                <div>
+                    <img src="assets/images/icons/3.png" class="mb20" alt="">
+                    <h4>DDos Protection</h4>
+                    <p>Dolor minim in pariatur in deserunt laboris eu pariatur labore excepteur cupidatat cupidatat duis dolor in.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-sm-20 fadeInRight" data-aos="fade-up" data-aos-delay="600">
+                <div>
+                    <img src="assets/images/icons/4.png" class="mb20" alt="">
+                    <h4>Fast Support</h4>
+                    <p>Dolor minim in pariatur in deserunt laboris eu pariatur labore excepteur cupidatat cupidatat duis dolor in.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-customer-reviews></app-customer-reviews>
+<section class="no-bottom">
+    <app-questions></app-questions>
+</section>
+<section>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="subtitle fadeInUp mb-3" data-aos="fade-up">Payment Methods</div>
+                <h2 class="fadeInUp" data-aos="fade-up" data-aos-delay="200">We accept</h2>
+            </div>
+            <div class="col-lg-6">
+                <div class="row g-4">
+                    <div class="col-sm-2 col-4">
+                        <div class="p-2 rounded-10" data-bgcolor="rgba(255, 255, 255, .05)">
+                            <img src="assets/images/payments/visa.webp" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-4">
+                        <div class="p-2 rounded-10" data-bgcolor="rgba(255, 255, 255, .05)">
+                            <img src="assets/images/payments/mastercard.webp" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-4">
+                        <div class="p-2 rounded-10" data-bgcolor="rgba(255, 255, 255, .05)">
+                            <img src="assets/images/payments/paypal.webp" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-4">
+                        <div class="p-2 rounded-10" data-bgcolor="rgba(255, 255, 255, .05)">
+                            <img src="assets/images/payments/skrill.webp" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-4">
+                        <div class="p-2 rounded-10" data-bgcolor="rgba(255, 255, 255, .05)">
+                            <img src="assets/images/payments/jcb.webp" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-4">
+                        <div class="p-2 rounded-10" data-bgcolor="rgba(255, 255, 255, .05)">
+                            <img src="assets/images/payments/american-express.webp" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
