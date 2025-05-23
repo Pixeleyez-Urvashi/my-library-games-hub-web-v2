@@ -1,0 +1,110 @@
+<section class="jarallax">
+    <img src="assets/images/background/3.webp" class="jarallax-img" alt="">
+    <div class="de-gradient-edge-top"></div>
+    <div class="de-gradient-edge-bottom"></div>
+    <div class="container z-1000">
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+                <h2 class="fadeInUp" data-aos="fade-up" data-aos-delay="200">Catálogo de Jogos</h2>
+
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-lg-6 form-dark fadeIn" data-aos="fade-in">
+                <input type="text" [(ngModel)]="gameTitleToSearch" (keyup.enter)="searchGame()" name="search"
+                    id="search_games"
+                    class="form-control border-white-op3-1 rounded-30px bg-dark-2 text-white fs-18 p-2 px-3"
+                    placeholder="Procurar jogo" required>
+            </div>
+            <div class="col-lg-6">
+                <!--AQUI VAI TRAZER O CHECK BOX DE CONSOLES PARA FILTRAR -->
+                <ul id="filters" class="float-lg-end float-sm-start fadeInUp">
+                    <li>
+                        <a href="javascript:void(0);" [class.selected]="selectedFilter === '*'"
+                            (click)="setFilter('*')">
+                            All Games
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" [class.selected]="selectedFilter === '.popular'"
+                            (click)="setFilter('.popular')">
+                            Popular
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" [class.selected]="selectedFilter === '.fps'"
+                            (click)="setFilter('.fps')">
+                            FPS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" [class.selected]="selectedFilter === '.survival'"
+                            (click)="setFilter('.survival')">
+                            Survival
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" [class.selected]="selectedFilter === '.sandbox'"
+                            (click)="setFilter('.sandbox')">
+                            Sandbox
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="gallery" class="row g-4">
+            <div *ngFor="let game of games" class="col-lg-2 col-md-4 col-sm-6"
+                [hidden]="!isItemVisible(game.platformConsole.idPlatformConsole)">
+
+                <div class="de-item">
+                    <div class="d-overlay">
+
+
+                        <div class="d-text">
+                            <h6> {{game.gameTitle}}</h6>
+                            <p class="d-price">
+                                <span class="price"><img [src]="game.platformConsole.consolePlatformIconPath"
+                                        class="img-platform-console"></span>
+
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <img style="cursor: pointer;" [ngClass]="{
+    'img-12x12': game.platformConsole.idPlatformConsole === 15 || game.platformConsole.idPlatformConsole === 25 || 
+    game.platformConsole.idPlatformConsole === 5 ,'img-3x2': game.platformConsole.idPlatformConsole === 5 
+  }" [src]="game.coverGameURL" class="img-fluid" [alt]="game.gameTitle">
+                </div>
+            </div>
+            <div class="spacer-single"></div>
+
+            <div class="col-md-12">
+                <ul style="justify-content: center;" class="pagination">
+                    <li [ngClass]="{disabled:pagination.currentPage === 1}">
+                        <a class="page-link" (click)="setPage(1)">Início</a>
+                    </li>
+                    <li [ngClass]="{disabled:pagination.currentPage === 1}">
+                        <a class="page-link" (click)="setPage(pagination.currentPage - 1)"> <i
+                                class="fa fa-angle-left"></i></a>
+                    </li>
+                    <li *ngFor="let page of pagination.pages" [ngClass]="{active:pagination.currentPage === page}">
+                        <a class="page-link" (click)="setPage(page)">{{page}}</a>
+                    </li>
+                    <li [ngClass]="{disabled:pagination.currentPage === pagination.totalPages}">
+                        <a class="page-link" (click)="setPage(pagination.currentPage + 1)"><i
+                                class="fa fa-angle-right"></i></a>
+                    </li>
+                    <li [ngClass]="{disabled:pagination.currentPage === pagination.totalPages}">
+                        <a class="page-link" (click)="setPage(pagination.totalPages)">Último</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="no-top">
+    <app-questions></app-questions>
+</section>
