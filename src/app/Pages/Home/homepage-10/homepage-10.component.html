@@ -1,0 +1,119 @@
+<section id="section-hero" aria-label="section" class="jarallax">
+    <div class="de-gradient-edge-bottom"></div>
+    <img src="assets/images/background/14.webp" class="jarallax-img" alt="">
+    <div class="container z-1000">
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <div class="spacer-double d-lg-none d-sm-block"></div>
+                <h2 class="text-white fadeInUp" data-aos="fade-up" data-aos-delay="100">Game Hosting Server</h2>
+                <h5 class="mb-3 fadeInUp" data-aos="fade-up" data-aos-delay="300">Take your gaming experience to the next level</h5>
+                <p class="lead mb-0 fadeInUp" data-aos="fade-up" data-aos-delay="500">Say goodbye to lag and downtime, and hello to uninterrupted, high-performance gameplay. Our robust infrastructure ensures lightning-fast speeds, rock-solid reliability, and seamless scalability, so you can focus on what matters most: winning.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="no-top fadeIn" data-aos="fade-up" data-aos-delay="900">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-6">
+                <h3 class="fadeInUp mb20" data-aos="fade-up" data-aos-delay="700">Popular Game Servers</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let server of gameServers" class="col-lg-3 col-sm-6">
+                <div class="rounded-10 overflow-hidden bg-dark-2">
+                    <div class="relative">
+                        <span *ngIf="server.label" class="abs m-4 bg-color-3 text-light px-2 rounded-2 fs-14 fw-bold text-uppercase">{{ server.label }}</span>
+                        <img [src]="server.image" class="img-fluid" alt="{{ server.title }}">
+                    </div>
+                    <div class="p-4">
+                        <div class="text-center">
+                            <h4>{{ server.title }}</h4>
+                        </div>
+                        <ul class="ul-style-2 color-green">
+                            <li *ngFor="let feature of server.features">{{ feature }}</li>
+                        </ul>
+                        <div class="text-center mb-3">
+                            <span class="fs-14">Starting at</span>
+                            <h4 class="text-white">{{ server.price }}</h4>
+                        </div>
+                        <a [href]="server.link" appBtnMainHover class="btn-main w-100"><span>Get Hosting</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="no-top">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-6">
+                <h3 class="fadeInUp mb20" data-aos="fade-up">All Available Games</h3>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-lg-6 form-dark fadeIn" data-aos="fade-in">
+                <input type="text" name="search" id="search_games" class="form-control border-white-op3-1 rounded-30px bg-dark-2 text-white fs-18 p-2 px-3" placeholder="Search games" required>
+            </div>
+
+            <div id="games_list" class="row g-4 fadeIn" data-aos="fade-in">
+                <div *ngFor="let game of games" [ngClass]="game.category" class="col-lg-3 col-md-6 item">
+                    <div class="de-item">
+                        <div class="d-overlay">
+                            <div class="d-label">
+                                {{ game.label }}
+                            </div>
+                            <div class="d-text">
+                                <h4>{{ game.name }}</h4>
+                                <p class="d-price">Starting at <span class="price">{{ game.price }}</span></p>
+                                <a appBtnMainHover class="btn-main btn-fullwidth" [href]="game.link"><span>Order Now</span></a>
+                            </div>
+                        </div>
+                        <img [src]="game.image" class="img-fluid" alt="{{ game.name }}">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="no-top">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+                <h3 class="fadeInUp mb20" data-aos="fade-up">Latest Reviews</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="swiper-container" #testimonialCarousel>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" *ngFor="let testimonial of testimonials">
+                        <div class="de_testi type-2">
+                            <blockquote>
+                                <div class="de-rating-ext">
+                                    <span class="d-stars">
+                                        <i class="fa fa-star" *ngFor="let star of [].constructor(testimonial.stars); let i = index"></i>
+                                    </span>
+                                </div>
+                                <p>{{ testimonial.text }}</p>
+                                <div class="de_testi_by">
+                                    <img [src]="testimonial.image" alt="" /> <span>{{ testimonial.name }}</span>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </div>
+</section>
